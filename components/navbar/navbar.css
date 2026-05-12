@@ -1,0 +1,87 @@
+.navbar {
+  width: var(--navbar-width);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.logo {
+  width: 90%;
+  height: auto;
+
+  margin-bottom: 24px;
+
+  filter: drop-shadow(0 0 8px rgba(255, 106, 0, 0.4));
+  transition: 0.2s ease;
+
+  mix-blend-mode: screen;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 12px rgba(255, 106, 0, 0.7));
+  transform: scale(1.02);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+
+  color: var(--color-text);
+  font-size: 14px;
+
+  outline: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 16px;
+}
+
+.search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.search-input:hover {
+  border-color: var(--color-primary-dark);
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+.sections {
+  width: 100%;
+}
+
+.sections > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections h4 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: while;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.nav-link {
+  padding: 6px;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background: #222;
+  color: white;
+}
