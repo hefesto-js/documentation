@@ -149,7 +149,7 @@ const navConfig = [
 loadComponent({
   name: "navbar",
   selector: "#navbar",
-  path: "/components/navbar",
+  path: "components/navbar",
   props: { nav: navConfig },
 });
 

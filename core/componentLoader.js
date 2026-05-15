@@ -3,9 +3,9 @@ import { loadHTML } from "./htmlLoader.js";
 export async function loadComponent({ name, selector, path, props = {} }) {
   const containerList = document.querySelectorAll(selector);
 
-  const html = await loadHTML(`${path}/${name}.html`);
+  const html = await loadHTML(`../${path}/${name}.html`);
   const cssPath = `${path}/${name}.css`;
-  const jsModule = await import(`${path}/${name}.js`);
+  const jsModule = await import(`../${path}/${name}.js`);
 
   for (const container of containerList) {
     container.innerHTML = html;
