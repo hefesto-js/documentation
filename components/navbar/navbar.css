@@ -6,6 +6,8 @@
   flex-direction: column;
   align-items: center;
   padding: 24px 16px;
+
+  overflow-y: auto;
 }
 
 .logo {
@@ -67,11 +69,15 @@
 }
 
 .sections h4 {
-  margin: 10px 0 5px;
-  font-size: 14px;
+  margin: 16px 0 5px 0;
+  font-size: 24px;
   color: while;
   opacity: 0.8;
   width: 100%;
+}
+
+.sections a {
+  font-size: 18px;
 }
 
 .nav-link {
