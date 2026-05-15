@@ -1,5 +1,5 @@
-import { loadComponent } from "/core/componentLoader.js";
-import { renderDocs } from "/core/renderDocs.js";
+import { loadComponent } from "./core/componentLoader.js";
+import { renderDocs } from "./core/renderDocs.js";
 
 const navConfig = [
   {
